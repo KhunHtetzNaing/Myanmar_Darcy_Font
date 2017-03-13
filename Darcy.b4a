@@ -13,26 +13,27 @@ Module10=Other
 Build1=Default,com.htetznaing.mmdarcyfont
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"~\n~	android:exported="true"/>~\n~         <action android:name="android.intent.action.MAIN" />~\n~         <category android:name="android.intent.category.LAUNCHER" />)~\n~	~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~AddPermission(android.permission.WRITE_EXTERNAL_STORAGE)~\n~AddPermission(android.permission.INTERNET)~\n~AddPermission(android.permission.READ_EXTERNAL_STORAGE)~\n~'End of default text.~\n~'************ Google Play Services Base ************~\n~AddApplicationText(~\n~   <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~  android:exported="false"/>~\n~    <meta-data~\n~  android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version" />~\n~)~\n~~\n~'************ Google Play Services Base (end) ************~\n~~\n~'************ Firebase Ads ************~\n~AddApplicationText(~\n~  <activity~\n~  android:name="com.google.android.gms.ads.AdActivity"~\n~  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"~\n~  android:theme="@android:style/Theme.Translucent" />~\n~  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"~\n~  android:theme="@style/Theme.IAPTheme"/>~\n~)~\n~'************ Firebase Ads (end) ************
 IconFile=
-NumberOfFiles=19
+NumberOfFiles=20
 File1=about.png
 File2=bg.jpg
 File3=Darcy.apk
 File4=darcy.hwt
-File5=Darcy.ttf
-File6=Darcy.txj
-File7=data.zip
-File8=fb.png
-File9=huawei.jpg
-File10=icon.png
-File11=menu.png
-File12=moreapp.png
-File13=open.png
-File14=oppo.png
-File15=other.png
-File16=samsung.png
-File17=share.png
-File18=vivo.png
-File19=xiaomi.png
+File5=Darcy.itz
+File6=Darcy.ttf
+File7=Darcy.txj
+File8=data.zip
+File9=fb.png
+File10=huawei.jpg
+File11=icon.png
+File12=menu.png
+File13=moreapp.png
+File14=open.png
+File15=oppo.png
+File16=other.png
+File17=samsung.png
+File18=share.png
+File19=vivo.png
+File20=xiaomi.png
 NumberOfLibraries=10
 Library1=core
 Library2=phone
@@ -97,7 +98,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	lb.Gravity = Gravity.CENTER
 	lb.TextSize = 17
 	atx.initialize("atx",Me,200)
-	atx.Run( " ♡ ငါနင့္ကိုခ်စ္တယ္ ♡" &CRLF& "I Love You <3" ,lb)
+	atx.Run( " ♡ ျမန္မာစာေပ ♡" &CRLF& "Myanmar ^_^" ,lb)
 	atx.Endable = True
 
 	b1.Initialize("b1")
@@ -135,7 +136,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	Activity.AddView(b4,20%x,(b3.Top+b3.Height)+2%y,60%x,50dip)
 
 	lfoot.Initialize("ft")
-	lfoot.Text = "Powered By Myanmar Android Apps"
+	lfoot.Text = "Developed By Myanmar Android Apps"
 	lfoot.TextColor = Colors.Magenta
 	lfoot.Gravity = Gravity.CENTER
 	Activity.AddView(lfoot,0%x,(b4.Height+b4.Top)+5%y,100%x,5%y)
@@ -229,7 +230,7 @@ End Sub
 
 Sub b4_Click
 	Dim p As PhoneIntents
-	StartActivity(p.OpenBrowser("http://www.htetznaing.com"))
+	StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 End Sub
 
 Sub Activity_Resume
@@ -307,7 +308,7 @@ Sub SlideMenu_Click(Item As Object)
 		Case 7 :
 			Dim ShareIt As Intent
 			copy.clrText
-			copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+			copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 			ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 			ShareIt.SetType ("text/plain")
 			ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)
@@ -316,7 +317,7 @@ Sub SlideMenu_Click(Item As Object)
 			StartActivity (ShareIt)
 		Case 8 :
 			Dim p As PhoneIntents
-			StartActivity(p.OpenBrowser("http://www.htetznaing.com"))
+			StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 		Case 9 :
 			StartActivity(About)
 	End Select
@@ -329,7 +330,7 @@ End Sub
 Sub share_Click
 	Dim ShareIt As Intent
 	copy.clrText
-	copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+	copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 	ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 	ShareIt.SetType ("text/plain")
 	ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)

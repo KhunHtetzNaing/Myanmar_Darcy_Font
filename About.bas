@@ -66,9 +66,9 @@ Sub Activity_Create(FirstTime As Boolean)
 	lstOne.AddSingleLine2("App Name : Myanmar Darcy Font",1)
 	lstOne.AddSingleLine2("Version : 1.0",2)
 	lstOne.AddSingleLine2 ("Font Developer : Anonymous   ", 3)
-	lstOne.AddSingleLine2 ("Developed By : Khun Htetz Naing    ", 4)
+	lstOne.AddSingleLine2 ("Developed By : Myanmar Android App   ", 4)
 	lstOne.AddSingleLine2("Powered By : Myanmar Android Apps",5)
-	lstOne.AddSingleLine2 ("Website : www.HtetzNaing.com  ", 6)
+	lstOne.AddSingleLine2 ("Website : www.MyanmarAndroidApp.com  ", 6)
 	lstOne.AddSingleLine2 ("Facebook : www.fb.com/MmFreeAndroidApps   ", 7)
 	Activity.AddView ( lstOne, 30dip , 170dip , 100%x -  60dip, 280dip)
 	
@@ -136,25 +136,11 @@ Sub t_Tick
 End Sub
 
 Sub imv_Click
-	Try
- 
-		Dim Facebook As Intent
- 
-		Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
-		StartActivity(Facebook)
- 
-	Catch
- 
-		Dim i As Intent
-		i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
- 
-		StartActivity(i)
- 
-	End Try
+	StartActivity(p.OpenBrowser("http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font"))
 End Sub
 
 Sub lbname_Click
-	StartActivity(p.OpenBrowser("https://play.google.com/store/apps/details?id=com.htetznai.paohmusic"))
+	StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 End Sub
 
 Sub lblCredit_Click
@@ -189,13 +175,13 @@ Sub lstOnes_ItemClick (Position As Int, Value As Object)
  
 				Dim Facebook As Intent
  
-				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
 				StartActivity(Facebook)
  
 			Catch
  
 				Dim i As Intent
-				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
  
 				StartActivity(i)
  
@@ -206,30 +192,45 @@ Sub lstOnes_ItemClick (Position As Int, Value As Object)
  
 				Dim Facebook As Intent
  
-				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
 				StartActivity(Facebook)
  
 			Catch
  
 				Dim i As Intent
-				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
  
 				StartActivity(i)
  
 			End Try
 		Case 4
-		Case 1
 			Try
  
 				Dim Facebook As Intent
  
-				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://profile/100006126339714")
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
 				StartActivity(Facebook)
  
 			Catch
  
 				Dim i As Intent
-				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MgHtetzNaing")
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
+ 
+				StartActivity(i)
+ 
+			End Try
+		Case 1
+			Try
+ 
+				Dim Facebook As Intent
+ 
+				Facebook.Initialize(Facebook.ACTION_VIEW, "fb://page/627699334104477")
+				StartActivity(Facebook)
+ 
+			Catch
+ 
+				Dim i As Intent
+				i.Initialize(i.ACTION_VIEW, "https://m.facebook.com/MmFreeAndroidApps")
  
 				StartActivity(i)
  
@@ -251,7 +252,7 @@ Sub lstOnes_ItemClick (Position As Int, Value As Object)
 			End Try
 			
 		Case 6
-			StartActivity(p.OpenBrowser("http://www.htetznaing.com"))
+			StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 		Case 7
 			Try
  

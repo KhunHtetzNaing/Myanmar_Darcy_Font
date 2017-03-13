@@ -209,7 +209,7 @@ Sub SlideMenu_Click(Item As Object)
 		Case 7 :
 			Dim ShareIt As Intent
 			copy.clrText
-			copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+			copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 			ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 			ShareIt.SetType ("text/plain")
 			ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)
@@ -218,7 +218,7 @@ Sub SlideMenu_Click(Item As Object)
 			StartActivity (ShareIt)
 		Case 8 :
 			Dim p As PhoneIntents
-			StartActivity(p.OpenBrowser("http://www.htetznaing.com"))
+			StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 		Case 9 :
 			StartActivity(About)
 	End Select
@@ -231,7 +231,7 @@ End Sub
 Sub share_Click
 	Dim ShareIt As Intent
 	copy.clrText
-	copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+	copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 	ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 	ShareIt.SetType ("text/plain")
 	ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)

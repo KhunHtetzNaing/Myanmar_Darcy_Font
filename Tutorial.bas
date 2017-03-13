@@ -25,7 +25,7 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	wb.Initialize("wb")
 	Activity.AddView(wb,0%x,55dip,100%x,100%y)
-	wb.LoadUrl("http://www.htetznaing.com/2017/02/Myanmar-Font-Styles.html")
+	wb.LoadUrl("http://www.myanmarandroidapp.com/2017/02/myanmar-font-styles.html")
 	wv.setDisplayZoomControls(wb , False)
 	
 	tlb.Initialize("tlb")
@@ -58,7 +58,7 @@ End Sub
 
 Sub lb_Click
 	Dim p As PhoneIntents
-	StartActivity(p.OpenBrowser("http://www.htetznaing.com/2017/02/Myanmar-Font-Styles.html"))
+	StartActivity(p.OpenBrowser("http://www.myanmarandroidapp.com/2017/02/myanmar-font-styles.html"))
 End Sub
 Sub Activity_Resume
 

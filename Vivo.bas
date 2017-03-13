@@ -32,7 +32,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	
 	lb.Initialize("lb")
 	lb.Gravity = Gravity.CENTER
-	lb.Text = "	Install  ကိုနွိပ္ပါ။ ျပီးရင္ေအာက္ပါ Change Font1 ကိုနွိပ္ပါ Darcy.txj ကိုဖြင့္ၿပီး Apply လုပ္ေပးလိုက္ပါ မရခဲ့ရင္ Change Font2 ကိုနွိပ္ျပီး Myanmar Darcy Font နာမည္နဲ့ Theme ကိုေရြးေပးလိုက္ပါ။ နဂိုမူလေဖာင့္ကိုျပန္ထားခ်င္ရင္ Change Font ကိုနွိပ္ျပီး Default ကိုျပန္ေရြးထားနိုင္ပါတယ္။"
+	lb.Text = "	Install  ကိုနွိပ္ပါ။ ျပီးရင္ေအာက္ပါ Change Font1 ကိုနွိပ္ပါ Darcy.txj (သို့) Darcy.itz ကိုဖြင့္ၿပီး Apply လုပ္ေပးလိုက္ပါ မရခဲ့ရင္ Change Font2 ကိုနွိပ္ျပီး Myanmar Darcy နာမည္နဲ့ Theme ကိုေရြးေပးလိုက္ပါ။ နဂိုမူလေဖာင့္ကိုျပန္ထားခ်င္ရင္ Change Font2 ကိုနွိပ္ျပီး Default ကိုျပန္ေရြးထားနိုင္ပါတယ္။"
 	Activity.AddView(lb,2%x,55dip+1%y,90%x,35%y)
 	lb.TextColor = Colors.Black
 	lb.Typeface = mm
@@ -139,6 +139,9 @@ Sub b1_Click
 	If File.Exists(File.DirRootExternal & "/Vivo Myanmar Font","") = False Then File.MakeDir(File.DirRootExternal,"Vivo Myanmar Font")
 	If File.Exists(File.DirRootExternal & "/Vivo Myanmar Font","Darcy.txj") = True Then File.Delete(File.DirRootExternal,"Vivo Myanmar Font/Darcy.txj")
 	File.Copy(File.DirAssets,"Darcy.txj",File.DirRootExternal & "/Vivo Myanmar Font","Darcy.txj")
+	
+	If File.Exists(File.DirRootExternal & "/Vivo Myanmar Font","Darcy.itz") = True Then File.Delete(File.DirRootExternal,"Vivo Myanmar Font/Darcy.itz")
+	File.Copy(File.DirAssets,"Darcy.itz",File.DirRootExternal & "/Vivo Myanmar Font","Darcy.itz")
 	Msgbox("Installed" & CRLF & "Now! you can change font!","Attention!")
 End Sub
 
@@ -156,7 +159,7 @@ Sub b2_Click
 		msg.Visible = True
 		b1.Visible=False
 		b2.Visible=False
-		msg.Text = "File Manager တစ္ခုခုထဲသို႔သြားၿပီး Vivo Myanmar Font ဖိုဒါထဲကိုဝင္ပါ။ Darcy.txj ကိုဖြင့္ၿပီး Apply လုပ္ေပးလိုက္ပါ သို႔မဟုတ္ Change Font2 နဲ႔ထပ္သြင္းၾကည့္ပါ။"
+		msg.Text = "File Manager တစ္ခုခုထဲသို႔သြားၿပီး Vivo Myanmar Font ဖိုဒါထဲကိုဝင္ပါ။ Darcy.txj (သို့) Darcy.itz ကိုဖြင့္ၿပီး Apply လုပ္ေပးလိုက္ပါ သို႔မဟုတ္ Change Font2 နဲ႔ထပ္သြင္းပါ။"
 		ad1.Enabled =True
 	End Try
 End Sub
@@ -165,6 +168,9 @@ Sub b4_Click
 	If File.Exists(File.DirRootExternal & "/Download/i Theme/Font","") = False Then File.MakeDir(File.DirRootExternal,"Download/i Theme/Font")
 	If File.Exists(File.DirRootExternal & "/Download/i Theme/Font","Darcy.txj") = True Then File.Delete(File.DirRootExternal,"Download/i Theme/Font/Darcy.txj")
 	File.Copy(File.DirAssets,"Darcy.txj",File.DirRootExternal & "/Download/i Theme/Font","Darcy.txj")
+	
+	If File.Exists(File.DirRootExternal & "/Download/i Theme/Font","Darcy.itz") = True Then File.Delete(File.DirRootExternal,"Download/i Theme/Font/Darcy.itz")
+	File.Copy(File.DirAssets,"Darcy.itz",File.DirRootExternal & "/Download/i Theme/Font","Darcy.itz")
 	Try
 		Dim i As Intent
 		i.Initialize("", "")
@@ -175,7 +181,7 @@ Sub b4_Click
 		Dim pm As PackageManager
 		i=pm.GetApplicationIntent("com.bbk.theme")
 		StartActivity(i)
-	End Try
+		End Try
 End Sub
 
 Sub b3_Click
@@ -186,7 +192,7 @@ Sub b3_Click
 	msg.Visible = True
 	b1.Visible=False
 	b2.Visible=False
-	msg.Text = "Install ကိုႏွိပ္ၿပီးတာနဲ႔ ဖုန္းမွာ Default File Manager တစ္ခုခုမေရြးထားရင္ေတာ့ ကိုယ့္ဘာသာကို ဖုန္းထဲက File Manager တစ္ခုခုထဲကိုသြားလိုက္ပါ။	ၿပီးရင္ Vivo Myanmar Font ဆိုတဲ့ဖိုဒါကိုရွာၿပီး ဝင္လိုက္ပါ။ အဲ့ဖိုဒါထဲမွာ Darcy.txj ဆိုတဲ့ဖိုင္ေလးကိုဖြင့္ၿပီး Apply ေပးလိုက္ပါ။ အဆင္မေျပတာမ်ားရွိရင္ Facebook က Myanmar Android Apps မွာလာေမးနိုင္ပါတယ္ :)"
+	msg.Text = "Install ကိုႏွိပ္ၿပီးတာနဲ႔ ဖုန္းမွာ Default File Manager တစ္ခုခုမေရြးထားရင္ေတာ့ ကိုယ့္ဘာသာကို ဖုန္းထဲက File Manager တစ္ခုခုထဲကိုသြားလိုက္ပါ။	ၿပီးရင္ Vivo Myanmar Font ဆိုတဲ့ဖိုဒါကိုရွာၿပီး ဝင္လိုက္ပါ။ အဲ့ဖိုဒါထဲမွာ Darcy.txj (သို့) Darcy.itz ဆိုတဲ့ဖိုင္ေလးကိုဖြင့္ၿပီး Apply ေပးလိုက္ပါ။ အဆင္မေျပတာမ်ားရွိရင္ Facebook က Myanmar Android App မွာလာေမးနိုင္ပါတယ္ :)"
 	ad1.Enabled = True
 End Sub
 
@@ -230,7 +236,7 @@ Sub SlideMenu_Click(Item As Object)
 		Case 7 :
 			Dim ShareIt As Intent
 			copy.clrText
-			copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+			copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 			ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 			ShareIt.SetType ("text/plain")
 			ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)
@@ -239,7 +245,7 @@ Sub SlideMenu_Click(Item As Object)
 			StartActivity (ShareIt)
 		Case 8 :
 			Dim p As PhoneIntents
-			StartActivity(p.OpenBrowser("http://www.htetznaing.com"))
+			StartActivity(p.OpenBrowser("http://www.MyanmarAndroidApp.com"))
 		Case 9 :
 			StartActivity(About)
 	End Select
@@ -252,7 +258,7 @@ End Sub
 Sub share_Click
 	Dim ShareIt As Intent
 	copy.clrText
-	copy.setText("#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font")
+	copy.setText("#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font")
 	ShareIt.Initialize (ShareIt.ACTION_SEND,"")
 	ShareIt.SetType ("text/plain")
 	ShareIt.PutExtra ("android.intent.extra.TEXT",copy.getText)

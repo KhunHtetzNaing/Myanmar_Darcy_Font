@@ -398,8 +398,8 @@ mostCurrent._lb.setGravity(anywheresoftware.b4a.keywords.Common.Gravity.CENTER);
 mostCurrent._lb.setTextSize((float) (17));
  //BA.debugLineNum = 52;BA.debugLine="atx.initialize(\"atx\",Me,200)";
 mostCurrent._atx._initialize(mostCurrent.activityBA,"atx",main.getObject(),(int) (200));
- //BA.debugLineNum = 53;BA.debugLine="atx.Run( \" ♡ ငါနင့္ကိုခ်စ္တယ္ ♡\" &CRLF& \"I Love Y";
-mostCurrent._atx._run(" ♡ ငါနင့္ကိုခ်စ္တယ္ ♡"+anywheresoftware.b4a.keywords.Common.CRLF+"I Love You <3",(anywheresoftware.b4a.objects.ConcreteViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ConcreteViewWrapper(), (android.view.View)(mostCurrent._lb.getObject())));
+ //BA.debugLineNum = 53;BA.debugLine="atx.Run( \" ♡ ျမန္မာစာေပ ♡\" &CRLF& \"Myanmar ^_^\" ,";
+mostCurrent._atx._run(" ♡ ျမန္မာစာေပ ♡"+anywheresoftware.b4a.keywords.Common.CRLF+"Myanmar ^_^",(anywheresoftware.b4a.objects.ConcreteViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ConcreteViewWrapper(), (android.view.View)(mostCurrent._lb.getObject())));
  //BA.debugLineNum = 54;BA.debugLine="atx.Endable = True";
 mostCurrent._atx._endable = anywheresoftware.b4a.keywords.Common.True;
  //BA.debugLineNum = 56;BA.debugLine="b1.Initialize(\"b1\")";
@@ -464,8 +464,8 @@ mostCurrent._b4.setTextSize((float) (17));
 mostCurrent._activity.AddView((android.view.View)(mostCurrent._b4.getObject()),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (20),mostCurrent.activityBA),(int) ((mostCurrent._b3.getTop()+mostCurrent._b3.getHeight())+anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (2),mostCurrent.activityBA)),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (60),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (50)));
  //BA.debugLineNum = 90;BA.debugLine="lfoot.Initialize(\"ft\")";
 mostCurrent._lfoot.Initialize(mostCurrent.activityBA,"ft");
- //BA.debugLineNum = 91;BA.debugLine="lfoot.Text = \"Powered By Myanmar Android Apps\"";
-mostCurrent._lfoot.setText((Object)("Powered By Myanmar Android Apps"));
+ //BA.debugLineNum = 91;BA.debugLine="lfoot.Text = \"Developed By Myanmar Android Apps\"";
+mostCurrent._lfoot.setText((Object)("Developed By Myanmar Android Apps"));
  //BA.debugLineNum = 92;BA.debugLine="lfoot.TextColor = Colors.Magenta";
 mostCurrent._lfoot.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.Magenta);
  //BA.debugLineNum = 93;BA.debugLine="lfoot.Gravity = Gravity.CENTER";
@@ -670,8 +670,8 @@ anywheresoftware.b4a.phone.Phone.PhoneIntents _p = null;
  //BA.debugLineNum = 183;BA.debugLine="Sub b4_Click";
  //BA.debugLineNum = 184;BA.debugLine="Dim p As PhoneIntents";
 _p = new anywheresoftware.b4a.phone.Phone.PhoneIntents();
- //BA.debugLineNum = 185;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.htetznain";
-anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.htetznaing.com")));
+ //BA.debugLineNum = 185;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.MyanmarAn";
+anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.MyanmarAndroidApp.com")));
  //BA.debugLineNum = 186;BA.debugLine="End Sub";
 return "";
 }
@@ -792,8 +792,8 @@ anywheresoftware.b4a.objects.IntentWrapper _shareit = null;
 _shareit = new anywheresoftware.b4a.objects.IntentWrapper();
  //BA.debugLineNum = 284;BA.debugLine="copy.clrText";
 mostCurrent._copy.clrText(mostCurrent.activityBA);
- //BA.debugLineNum = 285;BA.debugLine="copy.setText(\"#Myanmar_Darcy_Font App! Beautiful";
-mostCurrent._copy.setText(mostCurrent.activityBA,"#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font");
+ //BA.debugLineNum = 285;BA.debugLine="copy.setText(\"#MyanmarDarcyFont App! This is Beau";
+mostCurrent._copy.setText(mostCurrent.activityBA,"#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font");
  //BA.debugLineNum = 286;BA.debugLine="ShareIt.Initialize (ShareIt.ACTION_SEND,\"\")";
 _shareit.Initialize(_shareit.ACTION_SEND,"");
  //BA.debugLineNum = 287;BA.debugLine="ShareIt.SetType (\"text/plain\")";
@@ -846,8 +846,8 @@ case 6: {
 _shareit = new anywheresoftware.b4a.objects.IntentWrapper();
  //BA.debugLineNum = 262;BA.debugLine="copy.clrText";
 mostCurrent._copy.clrText(mostCurrent.activityBA);
- //BA.debugLineNum = 263;BA.debugLine="copy.setText(\"#Myanmar_Darcy_Font App! Beautifu";
-mostCurrent._copy.setText(mostCurrent.activityBA,"#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font");
+ //BA.debugLineNum = 263;BA.debugLine="copy.setText(\"#MyanmarDarcyFont App! This is Be";
+mostCurrent._copy.setText(mostCurrent.activityBA,"#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font");
  //BA.debugLineNum = 264;BA.debugLine="ShareIt.Initialize (ShareIt.ACTION_SEND,\"\")";
 _shareit.Initialize(_shareit.ACTION_SEND,"");
  //BA.debugLineNum = 265;BA.debugLine="ShareIt.SetType (\"text/plain\")";
@@ -864,8 +864,8 @@ anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Objec
 case 7: {
  //BA.debugLineNum = 271;BA.debugLine="Dim p As PhoneIntents";
 _p = new anywheresoftware.b4a.phone.Phone.PhoneIntents();
- //BA.debugLineNum = 272;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.htetzna";
-anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.htetznaing.com")));
+ //BA.debugLineNum = 272;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.Myanmar";
+anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.MyanmarAndroidApp.com")));
  break; }
 case 8: {
  //BA.debugLineNum = 274;BA.debugLine="StartActivity(About)";

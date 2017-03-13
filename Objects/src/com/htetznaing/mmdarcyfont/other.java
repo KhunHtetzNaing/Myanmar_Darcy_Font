@@ -881,8 +881,8 @@ anywheresoftware.b4a.objects.IntentWrapper _shareit = null;
 _shareit = new anywheresoftware.b4a.objects.IntentWrapper();
  //BA.debugLineNum = 637;BA.debugLine="copy.clrText";
 mostCurrent._copy.clrText(mostCurrent.activityBA);
- //BA.debugLineNum = 638;BA.debugLine="copy.setText(\"#Myanmar_Darcy_Font App! Beautiful";
-mostCurrent._copy.setText(mostCurrent.activityBA,"#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.htetznaing.com/search?q=Myanmar+Darcy+Font");
+ //BA.debugLineNum = 638;BA.debugLine="copy.setText(\"#MyanmarDarcyFont App! This is Beau";
+mostCurrent._copy.setText(mostCurrent.activityBA,"#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font");
  //BA.debugLineNum = 639;BA.debugLine="ShareIt.Initialize (ShareIt.ACTION_SEND,\"\")";
 _shareit.Initialize(_shareit.ACTION_SEND,"");
  //BA.debugLineNum = 640;BA.debugLine="ShareIt.SetType (\"text/plain\")";
@@ -935,8 +935,8 @@ case 6: {
 _shareit = new anywheresoftware.b4a.objects.IntentWrapper();
  //BA.debugLineNum = 615;BA.debugLine="copy.clrText";
 mostCurrent._copy.clrText(mostCurrent.activityBA);
- //BA.debugLineNum = 616;BA.debugLine="copy.setText(\"#Myanmar_Darcy_Font App! Beautifu";
-mostCurrent._copy.setText(mostCurrent.activityBA,"#Myanmar_Darcy_Font App! Beautiful Myanmar Zawgyi Font Style!	You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://bit.ly/2mqSEWy");
+ //BA.debugLineNum = 616;BA.debugLine="copy.setText(\"#MyanmarDarcyFont App! This is Be";
+mostCurrent._copy.setText(mostCurrent.activityBA,"#MyanmarDarcyFont App! This is Beautiful Myanmar Zawgyi Font Style! You can Use in Samung, Oppo,Vivo, Huawei (EMUI) and Xiaomi (MIUI) without Root Access!!!! Download Free at : http://www.myanmarandroidapp.com/search?q=Myanmar+Darcy+Font");
  //BA.debugLineNum = 617;BA.debugLine="ShareIt.Initialize (ShareIt.ACTION_SEND,\"\")";
 _shareit.Initialize(_shareit.ACTION_SEND,"");
  //BA.debugLineNum = 618;BA.debugLine="ShareIt.SetType (\"text/plain\")";
@@ -953,8 +953,8 @@ anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Objec
 case 7: {
  //BA.debugLineNum = 624;BA.debugLine="Dim p As PhoneIntents";
 _p = new anywheresoftware.b4a.phone.Phone.PhoneIntents();
- //BA.debugLineNum = 625;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.htetzna";
-anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.htetznaing.com")));
+ //BA.debugLineNum = 625;BA.debugLine="StartActivity(p.OpenBrowser(\"http://www.Myanmar";
+anywheresoftware.b4a.keywords.Common.StartActivity(mostCurrent.activityBA,(Object)(_p.OpenBrowser("http://www.MyanmarAndroidApp.com")));
  break; }
 case 8: {
  //BA.debugLineNum = 627;BA.debugLine="StartActivity(About)";
