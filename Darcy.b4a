@@ -48,7 +48,7 @@ Library10=abzipunzip
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: Myanmar Darcy Font
-	#VersionCode: 1
+	#VersionCode: 2
 	#VersionName: 1.0
 	'SupportedOrientations possible values: unspecified, landscape or portrait.
 	#SupportedOrientations: unspecified
